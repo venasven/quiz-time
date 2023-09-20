@@ -12,6 +12,7 @@ var currentQuestion = 0;
 var intervalId;
 var timeLeft = 45;
 
+//array of questions for quiz
 var questions = [
   {
     title: 'Commonly used data types DO NOT include:',
@@ -60,6 +61,7 @@ function displayQuestion(index) {
   }
 }
 
+//function for time penalty or score increase
 function answerQuestion() {
   if (this.innerHTML === questions[currentQuestion].answer) {
     score += 20;
@@ -80,7 +82,7 @@ function answerQuestion() {
   }
 }
 
-
+//renders end page once quiz is finished/failed
 function endPage() {
   var finalScore = document.querySelector('.score');
   submitInitials();
@@ -88,7 +90,7 @@ function endPage() {
   endPageEl.removeAttribute('class', 'hide');
   containerEl.setAttribute('class', 'hide');
 }
-
+//timer
 function startTimer() {
   intervalId = setInterval(function () {
     //updates the time
@@ -102,6 +104,8 @@ function startTimer() {
 
   }, 1000);
 }
+
+
 function startQuiz() {
   headerEl.setAttribute('class', 'hide');
   containerEl.setAttribute('class', 'display');
@@ -110,6 +114,7 @@ function startQuiz() {
   startTimer();
 }
 
+//function to add data into local storage
 function submitInitials() {
   submitEl.innerHTML = '';
   var initialsInput = document.createElement('input');
@@ -135,9 +140,10 @@ function submitInitials() {
   endPageP.appendChild(initialsInput);
   endPageP.appendChild(submitButton);
 }
-
+//starts quiz
 startBtn.addEventListener('click', startQuiz);
 
+//function to show all the high scores
 function listAllScores() {
   var titleScore = document.querySelector('ul');
   titleScore.textContent = 'High Scores: ';
