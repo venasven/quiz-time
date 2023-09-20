@@ -1,7 +1,99 @@
+* {
+    background-color: rgba(221, 216, 208, 0.685);
+}
+
 .hide {
     display: none;
 }
 
 .display {
-display: all;
+    display: all;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: #cf5e9c;
+    border: black solid;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.submitBtn {
+    background-color: #9b63db;
+    border: black solid;
+    color: white;
+    padding: 14px;
+    border-radius: 50%;
+    text-decoration: underline;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.startBtn {
+    background-color: #9b63db;
+    border: black solid;
+    color: white;
+    padding: 32px;
+    border-radius: 50%;
+    text-decoration: underline;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    font-size: 25px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+
+.score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.score-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
 }
